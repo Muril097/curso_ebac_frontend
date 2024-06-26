@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: tomato;
+    border-radius: 5px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header h1 {
+    position: relative;
+}
+header {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.466) 50%, rgba(255, 0, 0, 0) 100%);
+    padding: 65px 0;
+    justify-content: center;
+    color: #fff;
+}
+.menu {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(119, 54, 0, 0) 0%, rgba(0, 0, 0, 0.500) 100%);
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section h2 {
+    margin: 16px 0;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#confirma, #reseta {
+    color: #fff;
+    border: none;
+    padding: 12px 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+#confirma {
+    background-color: rgb(0, 185, 0);
+    max-width: 100%;
+    width: 147px;
+    cursor: pointer;
+    transform: scale(1.0);
+}
+
+#confirma:hover {
+    transform: scale(0.99);
+    transition: all 300ms;
+}
+
+#reseta {
+    background-color: rgb(255, 30, 30);
+    max-width: 100%;
+    width: 147px;
+    cursor: pointer;
+}
+
+#reseta:hover {
+    transform: scale(0.99);
+    transition: all 300ms;
+}
+
+#data-tarefa, #tarefa {
+    max-width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#tarefa {
+    width: 300px;
+}
+
+#data-tarefa {
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.lista {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    width: 350px;
+    height: 200px;
+    margin: 36px 0;
+    border: none; 
+    border-radius: 10px;
+    color: black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 5%, rgba(255, 255, 255, 0.1) 65%);
+    font-size: large;
+    visibility: visible;
+}
+
+#lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    width: 100%;
+    color: black;
+    border: none; 
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    width: 250px;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    font-weight: 600;
+}
+
+ul li span.checked {
+    text-decoration: line-through;
+}
+
+.verificar {
+    background-color: forestgreen;
+    border: none;
+    color: #fff;
+    padding: 6px;
+}
+
+.limpar {
+    background-color: red;
+    border: none;
+    color: #fff;
+    padding: 6px;
+}
+
+.verificar, .limpar {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.verificar:hover {
+    transform: scale(0.98);
+    transition: all 300ms;
+}
+
+.limpar:hover {
+    transform: scale(0.98);
+    transition: all 300ms;
+}
+
+section h3 {
+    margin: 8px 0;
+}
+body {
+    background-image: url(20882557-panorama-montanhas-nascer-do-sol-fundo-panorama-ilustracao-com-laranja-gradiente-cor-vetor.jpg);
+    background-size: cover;
+}
+.check {
+    text-decoration: line-through;
+}

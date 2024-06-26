@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <section>
+            <form class="menu">
+                <section>
+                    <h2>Adicione suas tarefas</h2>
+                </section>
+                <div class="inputs-group">
+                    <input class="inputs" id="tarefa" type="text" required placeholder="Adicione tarefa">
+                    <label class="inputs" for="data-tarefa"></label><h3>Horario:</h3></label>
+                    <input class="inputs" id="data-tarefa" type="time">
+                </div>
+                <div class="button-group">
+                    <button class="botoes" id="confirma" type="submit">Adicionar</button>
+                    <button class="botoes" id="reseta" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section class="lista">
+            <h3>Tarefas</h3>
+            <ul id="lista-tarefas">
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; Murilo B Silva - 2024 - Curso EBAC JQuery
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="scritp.js"></script>
+</body>
+</html>
