@@ -1,0 +1,1 @@
+document.getElementById("calcular").addEventListener("click",function(){var ಠ_ಠ33=parseFloat(document.getElementById("numero1").value)+parseFloat(document.getElementById("numero2").value);document.getElementById("resultado").ಠ_ಠ34="A soma é = "+ಠ_ಠ33});

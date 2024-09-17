@@ -1,0 +1,62 @@
+@use 'variaveis';
+
+header {
+    background-color: variaveis.$corHead;
+}
+
+body {
+    background-color: variaveis.$corPincipal;
+    color: variaveis.$corFonte;
+    font-family: variaveis.$fontePrincipal;
+
+    h1, h2 {
+        text-align: center;
+    }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            justify-items: center;
+        }
+
+        img {
+            width: 24vw;
+            margin-top: 15px;
+        }
+        
+        .COMPARADOR{
+            display: block;
+            margin: 80px auto;
+            max-width: 640px;
+            width: 100%;
+        }
+}
+
+
+@media screen and (max-width: variaveis.$tablet) {
+    body {
+        .container{
+            display: grid;
+            grid-template-columns:repeat(2, 50%) ;
+    
+            img {
+                width: 45vw;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    body {
+        .container{
+            display: grid;
+            grid-template-columns:repeat(1, 100%) ;
+    
+            img {
+                width: 90vw;
+                margin-top: 15px;
+            }
+        }
+    }
+}
