@@ -1,0 +1,78 @@
+@fontePrincipal: "Bebas Neue", sans-serif;
+@fonteDoTitulo: "Roboto Condensed", sans-serif;
+@corDoTextoA: #fff;
+@corDoTextoB: #000000;
+@corDeFundo: #3b64eb;
+@buttonColorA: #38f731;
+@buttonColorB: #22cf1c;
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+body {
+    font-family: @fontePrincipal;
+    color: @corDoTextoA;
+    @media @breakpointTablet {
+        background-color: @corDeFundo;
+    }
+
+    @media @breakpointMobile {
+        background-color: @corDeFundo;
+    }
+}
+
+h1 {
+    font-family: @fonteDoTitulo;
+    font-size: 3em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    background-color: @corDeFundo;
+    border: 8px solid @corDeFundo;
+    border-radius: 10px;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @buttonColorA;
+    color:@corDoTextoB ;
+    max-width: 480px;
+    width: 100%;
+    font-family: @fontePrincipal;
+        &:hover{
+            background-color: @buttonColorB;
+        }
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 480px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color:@corDoTextoA;
+    border-bottom: 2px solid #ffffffa2 ;
+}
+
+.resultado {
+    padding: 16px;
+    margin-top: 120px;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 2em;
+        display: block;
+    }
+}
