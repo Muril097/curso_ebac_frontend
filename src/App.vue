@@ -1,9 +1,11 @@
 <script setup>
-const title = "Calculadora"
-let number1 = 0
-let number2 = 0
-let operador = 0
-let resultado = 0
+import { ref } from 'vue';
+
+const title = "Calculadora";
+const number1 = ref(0);
+const number2 = ref(0);
+const operador = ref(0);
+const resultado = ref(0);
 
 // Função de cálculo
 function calc() {
