@@ -9,24 +9,24 @@ const resultado = ref(0);
 
 // Função de cálculo
 function calc() {
-  if (operador === 1) {
-    if (number2 === 0) {
-    resultado = "Erro: Divisão por zero";
+  if (operador.value === 1) {
+    if (number2.value === 0) {
+    resultado.value = "Erro: Divisão por zero";
     } else {
-    resultado = number1 / number2;
+    resultado.value = number1.value / number2.value;
     }
-  } else if (operador === 2) {
-    resultado = number1 * number2;
-  } else if (operador === 3) {
-    resultado = number1 - number2;
-  } else if (operador === 4) {
-    resultado = number1 + number2;
+  } else if (operador.value === 2) {
+    resultado.value = number1.value * number2.value;
+  } else if (operador.value === 3) {
+    resultado.value = number1.value - number2.value;
+  } else if (operador.value === 4) {
+    resultado.value = number1.value + number2.value;
   }
 }
 
 // Função para definir operador
 function atualizarOperador(valor) {
-  operador = valor;
+  operador.value = valor;
 }
 </script>
 
@@ -47,7 +47,7 @@ function atualizarOperador(valor) {
   <button @click="calc()">=</button>
   
   <!-- Botão pra limpar -->
-  <button @click="number1 = number2 = operador = 0; resultado = 0">C</button>
+  <button @click="number1.value = number2.value = operador.value = 0; resultado.value = 0">C</button>
   
   <!-- resultado -->
   <h2>{{ resultado }}</h2>
