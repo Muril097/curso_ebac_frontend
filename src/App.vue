@@ -44,11 +44,11 @@ function atualizarOperador(valor) {
   <button @click="atualizarOperador(3)">-</button>
   <button @click="atualizarOperador(4)">+</button>
   
-  <!-- igual -->
-  <button @click="calc()">=</button>
+  <!-- igual
+  <button @click="calc()">=</button> -->
   
-  <!-- Botão pra limpar -->
-  <button disabled @click="number1.value = number2.value = operador.value = 0; resultado.value = 0">C</button>
+  <!-- Botão pra limpar
+  <button disabled @click="number1.value = number2.value = operador.value = 0; resultado.value = 0">C</button> -->
   
   <!-- resultado -->
   <h2>{{ resultado }}</h2>
@@ -84,7 +84,7 @@ input {
 }
 button{
   justify-items: center;
-  width: 156px;
+  width: 114px;
   height: 80px;
   font-size: 60px;
   margin: 5px;
@@ -99,6 +99,7 @@ h2 {
   font-size: 60px;
   margin: 0;
   font-family:sans-serif;
+  margin-top: 10px;
 
 }
 </style>
