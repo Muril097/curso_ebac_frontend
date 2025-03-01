@@ -31,6 +31,7 @@ function atualizarOperador(valor) {
 </script>
 
 <template>
+  <div>
   <h1>{{ title }}</h1>
   
   <!-- Inputs dos números -->
@@ -47,11 +48,57 @@ function atualizarOperador(valor) {
   <button @click="calc()">=</button>
   
   <!-- Botão pra limpar -->
-  <button @click="number1.value = number2.value = operador.value = 0; resultado.value = 0">C</button>
+  <button disabled @click="number1.value = number2.value = operador.value = 0; resultado.value = 0">C</button>
   
   <!-- resultado -->
   <h2>{{ resultado }}</h2>
+  </div>
 </template>
 
 <style scoped>
+
+div {
+  width: 600px;
+  margin: 0 33vw;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  font-size: 60px;
+  
+  font-family:sans-serif;
+}
+input {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 492px;
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 60px;
+
+  
+}
+button{
+  justify-items: center;
+  width: 156px;
+  height: 80px;
+  font-size: 60px;
+  margin: 5px;
+
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  font-size: 60px;
+  margin: 0;
+  font-family:sans-serif;
+
+}
 </style>
