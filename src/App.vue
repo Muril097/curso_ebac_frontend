@@ -1,28 +1,28 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const title = "Calculadora";
 const number1 = ref(0);
 const number2 = ref(0);
 const operador = ref(0);
-const resultado = ref(0);
 
-// Função de cálculo
-function calc() {
+// Função de cálculo, com o computed
+const resultado = computed(() => {
   if (operador.value === 1) {
     if (number2.value === 0) {
-    resultado.value = "Erro: Divisão por zero";
+      return "Erro: Divisão por zero";
     } else {
-    resultado.value = number1.value / number2.value;
+      return number1.value / number2.value;
     }
   } else if (operador.value === 2) {
-    resultado.value = number1.value * number2.value;
+    return number1.value * number2.value;
   } else if (operador.value === 3) {
-    resultado.value = number1.value - number2.value;
+    return number1.value - number2.value;
   } else if (operador.value === 4) {
-    resultado.value = number1.value + number2.value;
+    return number1.value + number2.value;
   }
-}
+  return 0;
+});
 
 // Função para definir operador
 function atualizarOperador(valor) {
